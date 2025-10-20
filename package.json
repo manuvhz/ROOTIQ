@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "esbuild index.tsx --bundle --outfile=dist/bundle.js --jsx=automatic --minify && cp index.html dist/index.html && sed -i 's|<script type=\\\"module\\\" src=\\\"/index.tsx\\\"></script>|<script defer src=\\\"/bundle.js\\\"></script>|' dist/index.html && sed -i '/<script type=\\\"importmap\\\">/,/<\\/script>/d' dist/index.html"
+    "build": "esbuild index.tsx --bundle --outfile=dist/bundle.js --jsx=automatic --minify && cp index.html dist/index.html && cp favicon.svg dist/favicon.svg && sed -i 's|<script type=\\\"module\\\" src=\\\"/index.tsx\\\"></script>|<script defer src=\\\"/bundle.js\\\"></script>|' dist/index.html && sed -i '/<script type=\\\"importmap\\\">/,/<\\/script>/d' dist/index.html"
   },
   "dependencies": {
     "react": "^18.2.0",
