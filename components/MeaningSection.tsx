@@ -15,11 +15,6 @@ const MeaningSection: React.FC = () => {
                     Imagina un diagrama de flujo, pero súper potente. Un árbol de decisión es un modelo de aprendizaje automático que toma decisiones basándose en una serie de preguntas sobre los datos. Comienza en una raíz y se ramifica en nodos, donde cada nodo representa una pregunta, cada rama una respuesta, y cada hoja una decisión final o predicción.
                 </p>
             </div>
-            <div className={`mt-16 transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}`}>
-                <div className="p-8 border border-[#00ffae]/30 rounded-lg bg-black/20 max-w-2xl mx-auto">
-                    <p className="text-xl italic">"Es como jugar a las '20 preguntas' con tus datos para descubrir sus secretos."</p>
-                </div>
-            </div>
         </section>
     );
 };
